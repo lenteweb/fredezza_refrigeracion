@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/fredezza0.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script>
+imagenes = new Array();
+//Agrega tantas imágenes como necesites en el array
+imagenes[0] = "images/refrigeracion.png";
+imagenes[1] = "images/lavadoras.png";
+imagenes[2] = "images/todaslasmarcas-nvo.png";
+imagenes[3] = "images/servicioadomicilio.png";
+siguiente = 0;
+
+function CambiaImagen()
+{
+dimensiones = $("#box-imagen").width();
+$("#box-imagen img").css({left: -dimensiones+"px"}).attr("src", imagenes[siguiente]);
+$("#box-imagen img").animate({left: "+="+dimensiones});
+$("#box-imagen a").attr("href", imagenes[siguiente]);
+
+siguiente = siguiente+1;
+if (siguiente >= imagenes.length)
+{
+siguiente = 0;
+}
+//Aquí puedes colocar el tiempo para cada transición de imagen
+transicion = 4000;
+setTimeout("CambiaImagen()", transicion);
+}
+
+$(function(){
+CambiaImagen();
+});
+</script>
+	<script>window.PhoneCaller.call(phoneNumber: string, success: Function, error?: Function)</script>
+<style>
+
+#box
+{
+width: 100%;
+background: black;
+padding: 0px;
+border-radius: 4px;
+}
+
+#box-imagen{
+width: 100%;
+background: black;
+overflow: hidden;
+}
+
+#box-imagen img
+{
+position: relative;
+width: 100%;
+
+}
+</style>
+</head>
+<body>
+	<div data-role="page" id="inicio" data-theme="a">
+		<div data-role="content" data-theme="a">
+		  <img src="img/splash.jpg" width="100%" height="" alt=""/>
+<div data-role="footer" data-position="fixed" data-id="pie_fijo">
+		<div data-role="navbar">
+        <ul>
+        <li><a href="#" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active" data-transition="pop">INICIO</a></li>
+      <li><a href="#servicios" class="ui-btn ui-icon-shop ui-btn-icon-top" data-transition="pop">Servicios</a></li>
+      <li><a href="#contacto" class="ui-btn ui-icon-info ui-btn-icon-top">Contacto</a></li>
+        </ul>
+      </div></div>
+	  </div>
+	</div>
+	<div data-role="page" id="servicios" data-theme="a">
+		<div data-role="header" data-position="inline">
+	    <img src="img/header.jpg" width="100%" height="" alt=""/> </div>
+		<div data-role="content" data-theme="a">
+			<p>Bienvenidos<br> 
+Fredezza Refrigeración Querétaro</p>
+<div id="box">
+<div id="box-imagen">
+<img src="images/refrigeracion.png">
+</div>
+</div>
+<p><strong>Servicios</strong><br>
+Reparación de Refrigeradores y<br>
+Vitrinas de todas las marcas<br>
+Aire acondicionado<br>
+Cargas de gas<br>
+Cambio de moto compresor<br>
+Servicio residencial y comercial<br>
+Lavadoras y Secadoras</p>
+<p><strong>Presupuestos gratis.</strong><br>
+Nuestras presupuestos no tienen costo alguno y no existe compromiso alguno para realizarlo.
+</p>
+<p><strong>Servicio Express</strong><br>
+Llama nosotros vamos a tu domicilio.<br>
+No importa marca ni desperfecto. FREDEZZA se los repara el mismo día.<br>
+Podemos hacer reparaciones urgentes en tres horas o menos, y en su mismo domicilio.</p>
+<p><strong>Reparaciones garantizadas.</strong><br>
+Nuestra experiencia nos respalda.<br>
+Reparaciones 100% garantizadas.<br>
+Facturamos
+</p>
+	<div data-role="footer" data-position="fixed" data-id="pie_fijo">
+		<div data-role="navbar">
+        <ul>
+        <li><a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-top" data-transition="pop">INICIO</a></li>
+      <li><a href="#" class="ui-btn ui-icon-shop ui-btn-icon-top ui-btn-active" data-transition="pop">Servicios</a></li>
+      <li><a href="#contacto" class="ui-btn ui-icon-info ui-btn-icon-top">Contacto</a></li>
+        </ul>
+        </div></div>
+		</div>
+	</div>
+	<div data-role="page" id="contacto" data-theme="a">
+		<div data-role="header" data-position="inline">
+	    <img src="img/header.jpg" width="100%" height="" alt=""/> </div>
+		<div data-role="content" data-theme="a">
+<div style="text-align: justify">En Fredezza ofrecemos un servicio 100% garantizado y reparaciones en su propio domicilio, si son urgentes nos demoramos 3 horas o menos.</div>
+	<div class="encabeza"><strong>Contáctanos</strong></div>
+	<div style="text-align: center"><a href="tel:4424322013"><img src="img/telefono.png" width="20%" height="" alt=""/></a></div>
+		<div  class="encabeza"><strong>Envía Email</strong></div>
+	<div style="text-align: center"><a href="mailto:contacto@fredezza.com"><img src="img/envelope-icon.png" width="23%" height="" alt=""/></a></div>
+		<div  class="encabeza"><strong>Síguenos</strong></div>
+	<div style="text-align: center"><a href="https://www.facebook.com/abbel.aguuilar?hc_ref=SEARCH"><img src="img/Icono_Facebook.png" width="20%" height="" alt=""/></a></div>
+		<div  class="encabeza"><strong>Comparte Nuestra App</strong></div>
+	<div style="text-align: center"><a href=”whatsapp://send?text=Fredezza%20Refrigeración,%20servicio%20urgente%20100%%20garantizado%20descarga%20nuestra%20app%20aquí:%20fredezza.com/aplicacion-para-moviles/”><img src="img/icon-share.png" width="23%" height="" alt=""/></a></div>
+	<div data-role="footer" data-position="fixed" data-id="pie_fijo">
+		<div data-role="navbar">
+        <ul>
+        <li><a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-top" data-transition="pop">INICIO</a></li>
+      <li><a href="#servicios" class="ui-btn ui-icon-shop ui-btn-icon-top ui-btn-active" data-transition="pop">Servicios</a></li>
+      <li><a href="#" class="ui-btn ui-icon-info ui-btn-icon-top">Contacto</a></li>
+        </ul>
+        </div></div>
+		</div>
+	</div>
+		<div data-role="page" id="facebook" data-theme="a">
+			<div data-role="header" data-position="inline"></div>
+		<div data-role="content" id="content2" data-theme="a">
+
+<iframe href="https://www.facebook.com/abbel.aguuilar?hc_ref=SEARCH"  scrolling="auto" frameborder="0" width="100%" height="90%"></iframe>
+
+	<div data-role="footer" data-position="fixed" data-id="pie_fijo">
+		<div data-role="navbar">
+        <ul>
+        <li><a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-top" data-transition="pop">INICIO</a></li>
+      <li><a href="#servicios" class="ui-btn ui-icon-shop ui-btn-icon-top" data-transition="pop">Servicios</a></li>
+      <li><a href="#contacto" class="ui-btn ui-icon-info ui-btn-icon-top ui-btn-active">Contacto</a></li>
+        </ul>
+        </div></div>
+		</div>
+	</div>
+	<script>  
+   $(document).ready(function(){ 
+        $("#content2").load("https://www.facebook.com/abbel.aguuilar?hc_ref=SEARCH"); 
+    });
+   </script> 
+</body>
+</html>

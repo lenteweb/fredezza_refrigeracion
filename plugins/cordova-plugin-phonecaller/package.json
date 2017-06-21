@@ -1,0 +1,91 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-phonecaller",
+        "scope": null,
+        "escapedName": "cordova-plugin-phonecaller",
+        "name": "cordova-plugin-phonecaller",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\Unaweb\\Documents\\Github\\fredezza_refrigeracion"
+    ]
+  ],
+  "_from": "cordova-plugin-phonecaller@latest",
+  "_id": "cordova-plugin-phonecaller@0.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/cordova-plugin-phonecaller",
+  "_nodeVersion": "5.7.0",
+  "_npmOperationalInternal": {
+    "host": "packages-5-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-phonecaller-0.0.2.tgz_1456401214902_0.952342628268525"
+  },
+  "_npmUser": {
+    "name": "dgl",
+    "email": "dmitry.gladkov@gmail.com"
+  },
+  "_npmVersion": "3.7.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-phonecaller",
+    "scope": null,
+    "escapedName": "cordova-plugin-phonecaller",
+    "name": "cordova-plugin-phonecaller",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-phonecaller/-/cordova-plugin-phonecaller-0.0.2.tgz",
+  "_shasum": "6fc337653b96671f9c39509e73308012299916d9",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-phonecaller",
+  "_where": "C:\\Users\\Unaweb\\Documents\\Github\\fredezza_refrigeracion",
+  "author": {
+    "name": "CodeBakery"
+  },
+  "cordova": {
+    "id": "cordova-plugin-phonecaller",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Call phone numbers from your app",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "6fc337653b96671f9c39509e73308012299916d9",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-phonecaller/-/cordova-plugin-phonecaller-0.0.2.tgz"
+  },
+  "gitHead": "39f972e7e78cc26c7321506cdbcae215e3ba6329",
+  "issue": "https://github.com/codebakery/cordova-plugin-phonecaller/issues",
+  "keywords": [
+    "cordova",
+    "phonecaller",
+    "call",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "maintainers": [
+    {
+      "name": "dgl",
+      "email": "dmitry.gladkov@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-phonecaller",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repo": "https://github.com/codebakery/cordova-plugin-phonecaller.git",
+  "scripts": {},
+  "version": "0.0.2"
+}
